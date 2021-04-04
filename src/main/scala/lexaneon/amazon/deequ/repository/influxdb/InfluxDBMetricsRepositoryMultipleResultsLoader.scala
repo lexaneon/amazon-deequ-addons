@@ -70,8 +70,6 @@ object InfluxDBMetricsRepositoryMultipleResultsLoader {
   }
 
   def writeToInfluxDB(point: PointBuilderDecorator)(implicit influxDBConnect: InfluxDB): Unit = {
-//    import org.influxdb.BatchOptions TODO delete
-//    influxDBConnect.enableBatch(BatchOptions.DEFAULTS)
     influxDBConnect.write(point.build())
   }
 
