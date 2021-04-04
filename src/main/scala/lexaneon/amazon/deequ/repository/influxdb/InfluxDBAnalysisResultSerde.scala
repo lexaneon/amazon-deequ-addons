@@ -2,7 +2,6 @@ package lexaneon.amazon.deequ.repository.influxdb
 
 import com.amazon.deequ.analyzers.runners.AnalyzerContext
 import com.amazon.deequ.repository.{AnalysisResult, ResultKey}
-import lexaneon.amazon.deequ.repository.influxdb.InfluxDBMetricsRepositoryMultipleResultsLoader.{DATASET_DATE_FIELD, TAGS_PREFIX_FIELD, getColumnsFromQueryResult, getResultMapFromQueryResult}
 import org.influxdb.dto.QueryResult
 
 import java.util.concurrent.TimeUnit
